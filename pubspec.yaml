@@ -41,6 +41,9 @@ dependencies:
   dotted_border: ^2.0.0+2
   step_progress_indicator: ^1.0.2
   intl: ^0.17.0
+  firebase_core: ^1.15.0
+  firebase_auth: ^3.3.16
+  cloud_firestore: ^3.1.13
 
 dev_dependencies:
   flutter_test:

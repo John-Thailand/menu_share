@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "266547361534",
+    "project_id": "menu-share-99223",
+    "storage_bucket": "menu-share-99223.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266547361534:android:16ef4d01176ab1b97c17af",
+        "android_client_info": {
+          "package_name": "jp.co.mukku.menu_share"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "266547361534-ktt2pr7oevu4t9ea7q7u5bg0ae3cvste.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD27Vd32ypHwfpwZXAwXLWH1DNcvmmVxps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "266547361534-ktt2pr7oevu4t9ea7q7u5bg0ae3cvste.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "266547361534-5m7p61aon00b2182845a7hp1snv42vb5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "jp.co.mukku.menuShare"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
