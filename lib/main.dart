@@ -3,10 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
 import 'package:getx_todo_list/app/data/services/storage/services.dart';
-import 'package:getx_todo_list/app/modules/home/binding.dart';
-import 'package:getx_todo_list/app/modules/home/view.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:getx_todo_list/app/modules/welcome/view.dart';
+import 'package:getx_todo_list/app/routes/pages.dart';
 
 void main() async {
   // init firebase
@@ -28,10 +27,11 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Todo List using GetX',
       debugShowCheckedModeBanner: false,
+      builder: EasyLoading.init(),
       // home: const HomePage(),
       // initialBinding: HomeBinding(),
+      getPages: getPages(),
       home: const WelcomePage(),
-      builder: EasyLoading.init(),
     );
   }
 }
