@@ -6,6 +6,7 @@ import 'package:getx_todo_list/app/data/services/storage/services.dart';
 import 'package:getx_todo_list/app/modules/home/binding.dart';
 import 'package:getx_todo_list/app/modules/home/view.dart';
 import 'package:get_storage/get_storage.dart';
+import 'package:getx_todo_list/app/modules/welcome/view.dart';
 
 void main() async {
   // init firebase
@@ -27,8 +28,9 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Todo List using GetX',
       debugShowCheckedModeBanner: false,
-      home: const HomePage(),
-      initialBinding: HomeBinding(),
+      // home: const HomePage(),
+      // initialBinding: HomeBinding(),
+      home: const WelcomePage(),
       builder: EasyLoading.init(),
     );
   }
