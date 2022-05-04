@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:getx_todo_list/app/core/utils/extensions.dart';
 import 'package:getx_todo_list/app/routes/routes.dart';
 import 'package:getx_todo_list/app/widgets/rounded_button.dart';
+import 'package:getx_todo_list/generated/l10n.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({Key? key}) : super(key: key);
@@ -15,8 +16,9 @@ class WelcomePage extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const Text(
-                'WELCOME TO MENU SHARE',
+              Text(
+                // 'WELCOME TO MENU SHARE',
+                S.of(context).hello,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),

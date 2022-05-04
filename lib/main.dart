@@ -6,6 +6,8 @@ import 'package:getx_todo_list/app/data/services/storage/services.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:getx_todo_list/app/modules/welcome/view.dart';
 import 'package:getx_todo_list/app/routes/pages.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'generated/l10n.dart';
 
 void main() async {
   // init firebase
@@ -32,6 +34,13 @@ class MyApp extends StatelessWidget {
       // initialBinding: HomeBinding(),
       getPages: getPages(),
       home: const WelcomePage(),
+      localizationsDelegates: const [
+        S.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: S.delegate.supportedLocales,
     );
   }
 }
