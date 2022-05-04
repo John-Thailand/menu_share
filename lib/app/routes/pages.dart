@@ -8,6 +8,6 @@ List<GetPage> getPages() {
   return [
     GetPage(name: Routes.welcome, page: () => const WelcomePage()),
     GetPage(name: Routes.login, page: () => const LoginPage()),
-    GetPage(name: Routes.signup, page: () => const SignUpPage()),
+    GetPage(name: Routes.signup, page: () => SignUpPage()),
   ];
 }
