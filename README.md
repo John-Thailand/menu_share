@@ -15,3 +15,10 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 # menu_share
+
+## About this project
+This project is created with MVC pattern.
+
+Repository is an intermediate class between Buisiness Logic and Data Source.
+We describe processing other than processing related to data manipulation in Service.
+We describe the processing related to data manipulation in Service.
