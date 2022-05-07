@@ -1,4 +1,6 @@
 import 'package:get/get.dart';
+import 'package:getx_todo_list/app/modules/home/binding.dart';
+import 'package:getx_todo_list/app/modules/home/view.dart';
 import 'package:getx_todo_list/app/modules/login/view.dart';
 import 'package:getx_todo_list/app/modules/signup/binding.dart';
 import 'package:getx_todo_list/app/modules/signup/view.dart';
@@ -13,5 +15,7 @@ List<GetPage> getPages() {
         name: Routes.signup,
         page: () => const SignUpPage(),
         binding: SignUpBinding()),
+    GetPage(
+        name: Routes.home, page: () => const HomePage(), binding: HomeBinding())
   ];
 }

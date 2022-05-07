@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
 import 'package:getx_todo_list/app/core/utils/common.dart' as common;
+import 'package:getx_todo_list/app/data/models/user.dart';
+import 'package:getx_todo_list/app/data/services/firebase_auth/repository.dart';
 
 class SignUpController extends GetxController {
-  SignUpController();
+  final FirebaseAuthRepository firebaseAuthRepository;
+
+  SignUpController({required this.firebaseAuthRepository});
 
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
   final TextEditingController emailController = TextEditingController();
@@ -32,10 +35,13 @@ class SignUpController extends GetxController {
     return common.confirmValidator(passwordController.text, confirmPassword);
   }
 
-  Future<void> pressSignUpButton() async {
-    // Validate returns true if the form is valid, or false otherwise.
+  Future<String?> pressSignUpButton() async {
+    // TODO
     if (formKey.currentState!.validate()) {
-      EasyLoading.showSuccess('aaa');
+      User? user = await firebaseAuthRepository.createUserWithEmailAndPassword(
+        email: emailController.text,
+        password: passwordController.text,
+      );
     }
   }
 }

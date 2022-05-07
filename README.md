@@ -19,6 +19,7 @@ samples, guidance on mobile development, and a full API reference.
 ## About this project
 This project is created with MVC pattern.
 
+https://deha.co.jp/magazine/introducing-laravel-repository/
 Repository is an intermediate class between Buisiness Logic and Data Source.
 We describe processing other than processing related to data manipulation in Service.
 We describe the processing related to data manipulation in Service.
