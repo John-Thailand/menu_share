@@ -27,7 +27,6 @@ class FirebaseAuthService extends GetxService {
           .createUserWithEmailAndPassword(email: email, password: password);
     } on FirebaseAuthException catch (e) {
       // https://pub.dev/documentation/firebase_auth/latest/firebase_auth/User/linkWithCredential.html
-      // //debugPrint('FirebaseAuthException ${e.code} ${e.message}');
       switch (e.code) {
         case 'email-already-in-use':
           await EasyLoading.showError(
